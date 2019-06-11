@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scene.gd" type="Script" id=1]
 [ext_resource path="res://Button.gd" type="Script" id=2]
 [ext_resource path="res://Node.gd" type="Script" id=3]
+[ext_resource path="res://tomove.gd" type="Script" id=4]
 
 [sub_resource type="GDScript" id=1]
 script/source = "extends Button
@@ -68,16 +69,27 @@ align = 1
 script = ExtResource( 3 )
 
 [node name="Button2" type="Button" parent="."]
-margin_left = 271.0
-margin_top = 315.0
-margin_right = 556.0
-margin_bottom = 420.0
+margin_left = 260.717
+margin_top = 312.796
+margin_right = 545.717
+margin_bottom = 417.796
 custom_colors/font_color_disabled = Color( 0.145098, 0.678431, 0.101961, 1 )
 custom_colors/font_color = Color( 0.145098, 0.678431, 0.101961, 1 )
 text = "Next scene"
 script = SubResource( 1 )
 
+[node name="tomove" type="Button" parent="."]
+margin_left = 254.841
+margin_top = 438.398
+margin_right = 539.841
+margin_bottom = 543.398
+custom_colors/font_color_disabled = Color( 0.145098, 0.678431, 0.101961, 1 )
+custom_colors/font_color = Color( 0.145098, 0.678431, 0.101961, 1 )
+text = "to move"
+script = ExtResource( 4 )
+
 [node name="3d" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="cube" type="MeshInstance" parent="3d"]
 transform = Transform( -0.374719, 0, -0.927139, 0, 1, 0, 0.927139, 0, -0.374719, -1.05768, 1.48348, -4.71573 )
