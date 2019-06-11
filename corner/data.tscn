@@ -1,0 +1,104 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://afternoon.png" type="Texture" id=1]
+[ext_resource path="res://exit.gd" type="Script" id=2]
+[ext_resource path="res://back.gd" type="Script" id=3]
+
+[node name="data" type="Node2D"]
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 511.451, 298.539 )
+scale = Vector2( 0.537451, 0.560508 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="data" type="Node" parent="."]
+
+[node name="l_player_1" type="Label" parent="data"]
+modulate = Color( 0.705882, 0.0588235, 0.0588235, 1 )
+margin_left = 48.7858
+margin_top = 133.707
+margin_right = 158.786
+margin_bottom = 176.707
+text = "Enter player 1"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="l_player_2" type="Label" parent="data"]
+modulate = Color( 0.705882, 0.0588235, 0.0588235, 1 )
+margin_left = 50.7175
+margin_top = 203.048
+margin_right = 160.717
+margin_bottom = 246.048
+text = "Enter player 2
+"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="L_E_p_1" type="LineEdit" parent="data"]
+margin_left = 165.443
+margin_top = 141.138
+margin_right = 403.443
+margin_bottom = 172.138
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="L_E_p_2" type="LineEdit" parent="data"]
+margin_left = 166.235
+margin_top = 200.592
+margin_right = 404.235
+margin_bottom = 231.592
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="exit" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 758.312
+margin_top = 487.652
+margin_right = 1009.31
+margin_bottom = 586.652
+text = "Exit"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="back" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 758.926
+margin_top = 371.098
+margin_right = 1009.93
+margin_bottom = 470.098
+text = "Back"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="go" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 163.887
+margin_top = 255.771
+margin_right = 414.887
+margin_bottom = 354.771
+text = "Start"
+__meta__ = {
+"_edit_lock_": true
+}

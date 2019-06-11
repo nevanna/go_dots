@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://exit.gd" type="Script" id=1]
+
+[node name="game" type="Node2D"]
+
+[node name="exit" type="Button" parent="."]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 758.312
+margin_top = 487.652
+margin_right = 1009.31
+margin_bottom = 586.652
+text = "Exit"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}

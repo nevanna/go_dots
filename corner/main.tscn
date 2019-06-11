@@ -1,0 +1,67 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://main.gd" type="Script" id=1]
+[ext_resource path="res://afternoon.png" type="Texture" id=2]
+[ext_resource path="res://newgame.gd" type="Script" id=3]
+[ext_resource path="res://exit.gd" type="Script" id=4]
+
+[node name="main" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 511.451, 298.539 )
+scale = Vector2( 0.537451, 0.560508 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 9.9071
+margin_top = 9.14435
+margin_right = 524.907
+margin_bottom = 79.1443
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Corner. The main goal is to move your soldiers to enemy's corner faster than he."
+align = 1
+valign = 1
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="newgame" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 381.578
+margin_top = 115.366
+margin_right = 632.578
+margin_bottom = 214.366
+text = "New game"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="winners" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 382.453
+margin_top = 255.37
+margin_right = 633.453
+margin_bottom = 354.37
+text = "Winners"
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="exit" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 385.953
+margin_top = 396.249
+margin_right = 636.953
+margin_bottom = 495.249
+text = "Exit"
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
