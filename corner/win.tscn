@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://afternoon.png" type="Texture" id=1]
+[ext_resource path="res://exit.gd" type="Script" id=2]
+[ext_resource path="res://newgame.gd" type="Script" id=3]
+[ext_resource path="res://save.gd" type="Script" id=4]
+
+[node name="win" type="Node2D"]
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 511.451, 298.539 )
+scale = Vector2( 0.537451, 0.560508 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 151.97
+margin_top = 49.73
+margin_right = 843.97
+margin_bottom = 198.73
+rect_pivot_offset = Vector2( 438.729, 130.615 )
+text = "Winner is"
+
+[node name="buttons" type="Node" parent="."]
+
+[node name="exit" type="Button" parent="buttons"]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 758.312
+margin_top = 487.652
+margin_right = 1009.31
+margin_bottom = 586.652
+text = "Exit"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="newgame" type="Button" parent="buttons"]
+modulate = Color( 0.890196, 0.85098, 0.176471, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 757.557
+margin_top = 354.101
+margin_right = 1008.56
+margin_bottom = 453.101
+text = "New game"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="save" type="Button" parent="buttons"]
+modulate = Color( 0.890196, 0.85098, 0.176471, 1 )
+margin_left = 100.0
+margin_top = 299.0
+margin_right = 330.0
+margin_bottom = 404.0
+text = "Save to record table"
+script = ExtResource( 4 )
