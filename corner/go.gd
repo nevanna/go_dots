@@ -6,7 +6,9 @@ func ft_str_cmp(str1, str2):
 	var len1 = len(str1);
 	var len2 = len(str2);
 	
-	while ( i < len1  && i < len2 && str1[i] == str2[i]):
+	if (len1 > 28 || len2 > 28):
+		return (0);
+	while (i < len1  && i < len2 && str1[i] == str2[i]):
 		i += 1;
 	if (i == len1 && i == len2):
 		return(1);

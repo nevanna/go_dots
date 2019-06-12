@@ -1,15 +1,40 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://exit.gd" type="Script" id=1]
+[ext_resource path="res://game.gd" type="Script" id=1]
+[ext_resource path="res://exit.gd" type="Script" id=2]
+[ext_resource path="res://draw.gd" type="Script" id=3]
 
 [node name="game" type="Node2D"]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 1.88559, 596.019 ],
+"_edit_vertical_guides_": [ 200.23, 799.362 ]
+}
 
 [node name="exit" type="Button" parent="."]
 modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
 self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
-margin_left = 434.529
-margin_top = 552.106
-margin_right = 518.529
-margin_bottom = 596.106
+margin_left = 33.9177
+margin_top = 549.964
+margin_right = 117.918
+margin_bottom = 593.964
 text = "Exit"
-script = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="pl1_name" type="Label" parent="."]
+margin_left = 6.0
+margin_top = 2.0
+margin_right = 196.0
+margin_bottom = 48.0
+text = "
+"
+
+[node name="pl2_name" type="Label" parent="."]
+margin_left = 818.0
+margin_top = 501.0
+margin_right = 1018.0
+margin_bottom = 547.0
+text = "pl2"
+
+[node name="draw" type="Node2D" parent="."]
+script = ExtResource( 3 )

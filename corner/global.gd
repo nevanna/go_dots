@@ -10,6 +10,15 @@ var winner = 0;
 var fd = File.new();
 var content = '';
 
+#net params
+var y_min = 50;
+var x_min = 200;
+var cell = 63;
+var finish_in = cell * 8;
+var y_max = y_min + finish_in;
+var x_max = x_min + finish_in;
+
+
 func _ready():
 	print("loaded");
 	pass 

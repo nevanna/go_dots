@@ -7,6 +7,10 @@
 
 [node name="main" type="Node"]
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 86.0371, 114.517, 300.258 ],
+"_edit_vertical_guides_": [ 353.175, 388.26, 512.912 ]
+}
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 511.451, 298.539 )
@@ -28,12 +32,19 @@ valign = 1
 
 [node name="buttons" type="Node" parent="."]
 
+[node name="Panel" type="Panel" parent="buttons"]
+modulate = Color( 0.101961, 0.254902, 0.552941, 0.662745 )
+margin_left = 354.0
+margin_top = 86.0
+margin_right = 671.0
+margin_bottom = 531.0
+
 [node name="newgame" type="Button" parent="buttons"]
 modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
 self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
-margin_left = 381.578
+margin_left = 388.182
 margin_top = 115.366
-margin_right = 632.578
+margin_right = 639.182
 margin_bottom = 214.366
 text = "New game"
 script = ExtResource( 3 )
@@ -44,10 +55,10 @@ __meta__ = {
 [node name="winners" type="Button" parent="buttons"]
 modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
 self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
-margin_left = 382.453
-margin_top = 255.37
-margin_right = 633.453
-margin_bottom = 354.37
+margin_left = 388.232
+margin_top = 250.83
+margin_right = 639.232
+margin_bottom = 349.83
 text = "Winners"
 __meta__ = {
 "_edit_lock_": true
@@ -56,10 +67,10 @@ __meta__ = {
 [node name="exit" type="Button" parent="buttons"]
 modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
 self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
-margin_left = 385.953
-margin_top = 396.249
-margin_right = 636.953
-margin_bottom = 495.249
+margin_left = 388.017
+margin_top = 393.36
+margin_right = 639.017
+margin_bottom = 492.36
 text = "Exit"
 script = ExtResource( 4 )
 __meta__ = {
