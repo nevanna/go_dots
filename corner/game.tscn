@@ -7,8 +7,8 @@
 [node name="game" type="Node2D"]
 script = ExtResource( 1 )
 __meta__ = {
-"_edit_horizontal_guides_": [ 1.88559, 596.019 ],
-"_edit_vertical_guides_": [ 200.23, 799.362 ]
+"_edit_horizontal_guides_": [ 536.034, 554.601, 50.4445, 74.724 ],
+"_edit_vertical_guides_": [ 200.23, 704.105, 156.67, 232.797, 295.638, 358.479, 484.875, 547.716, 422.034, 611.985, 673.398 ]
 }
 
 [node name="exit" type="Button" parent="."]
@@ -38,3 +38,479 @@ text = "pl2"
 
 [node name="draw" type="Node2D" parent="."]
 script = ExtResource( 3 )
+
+[node name="num" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="num" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.141
+margin_top = 440.755
+margin_right = 200.141
+margin_bottom = 471.755
+text = "7"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num8" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.141
+margin_top = 502.882
+margin_right = 200.141
+margin_bottom = 533.882
+text = "8"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num2" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.141
+margin_top = 377.2
+margin_right = 200.141
+margin_bottom = 408.2
+text = "6"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num3" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.855
+margin_top = 315.073
+margin_right = 200.855
+margin_bottom = 346.073
+text = "5"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num4" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 159.427
+margin_top = 252.232
+margin_right = 199.427
+margin_bottom = 283.232
+text = "4"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num5" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.141
+margin_top = 187.963
+margin_right = 200.141
+margin_bottom = 218.963
+text = "3"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num6" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.855
+margin_top = 125.122
+margin_right = 200.855
+margin_bottom = 156.122
+text = "2"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num7" type="Label" parent="num"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 160.141
+margin_top = 62.2806
+margin_right = 200.141
+margin_bottom = 93.2806
+text = "1"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num2" type="Node2D" parent="."]
+editor/display_folded = true
+position = Vector2( -54.2717, -0.71405 )
+
+[node name="num" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.987
+margin_top = 439.327
+margin_right = 799.987
+margin_bottom = 470.327
+text = "7"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num8" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.987
+margin_top = 501.454
+margin_right = 799.987
+margin_bottom = 532.454
+text = "8"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num2" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.987
+margin_top = 375.772
+margin_right = 799.987
+margin_bottom = 406.772
+text = "6"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num3" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 760.701
+margin_top = 313.645
+margin_right = 800.701
+margin_bottom = 344.645
+text = "5"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num4" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.273
+margin_top = 250.804
+margin_right = 799.273
+margin_bottom = 281.804
+text = "4"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num5" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.987
+margin_top = 186.534
+margin_right = 799.987
+margin_bottom = 217.534
+text = "3"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num6" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 760.701
+margin_top = 123.693
+margin_right = 800.701
+margin_bottom = 154.693
+text = "2"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="num7" type="Label" parent="num2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 759.987
+margin_top = 60.8524
+margin_right = 799.987
+margin_bottom = 91.8524
+text = "1"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="liters" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="lit" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 213.699
+margin_top = 13.0077
+margin_right = 253.699
+margin_bottom = 44.0077
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "A"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit2" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 275.111
+margin_top = 13.7217
+margin_right = 315.111
+margin_bottom = 44.7217
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "B"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit3" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 338.667
+margin_top = 13.7217
+margin_right = 378.667
+margin_bottom = 44.7217
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "C"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit4" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 400.793
+margin_top = 13.0077
+margin_right = 440.793
+margin_bottom = 44.0077
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "D"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit5" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 465.062
+margin_top = 12.7218
+margin_right = 505.062
+margin_bottom = 43.7218
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "E"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit6" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 527.904
+margin_top = 13.0077
+margin_right = 567.904
+margin_bottom = 44.0077
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "F"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit7" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 591.745
+margin_top = 13.4359
+margin_right = 631.745
+margin_bottom = 44.4359
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "G"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit8" type="Label" parent="liters"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 654.3
+margin_top = 13.0078
+margin_right = 694.3
+margin_bottom = 44.0078
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "H"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="liters2" type="Node2D" parent="."]
+
+[node name="lit" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 213.699
+margin_top = 556.439
+margin_right = 253.699
+margin_bottom = 587.439
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "A"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit2" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 275.111
+margin_top = 557.153
+margin_right = 315.111
+margin_bottom = 588.153
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "B"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit3" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 338.666
+margin_top = 557.153
+margin_right = 378.666
+margin_bottom = 588.153
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "C"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit4" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 400.793
+margin_top = 556.439
+margin_right = 440.793
+margin_bottom = 587.439
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "D"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit5" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 465.062
+margin_top = 556.154
+margin_right = 505.062
+margin_bottom = 587.154
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "E"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit6" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 527.904
+margin_top = 556.439
+margin_right = 567.904
+margin_bottom = 587.439
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "F"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit7" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 591.745
+margin_top = 556.868
+margin_right = 631.745
+margin_bottom = 587.868
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "G"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="lit8" type="Label" parent="liters2"]
+modulate = Color( 0.0588235, 0.831373, 0.764706, 1 )
+margin_left = 654.3
+margin_top = 556.44
+margin_right = 694.3
+margin_bottom = 587.44
+rect_pivot_offset = Vector2( 30.5242, 21.115 )
+text = "H"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_lock_": true
+}

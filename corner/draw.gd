@@ -1,5 +1,9 @@
 extends Node2D
 
+
+
+
+
 func ft_make_net():
 	var p_1;
 	var p_2;
