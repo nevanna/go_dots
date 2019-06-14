@@ -22,18 +22,18 @@ text = "Exit"
 script = ExtResource( 2 )
 
 [node name="pl1_name" type="Label" parent="."]
-margin_left = 6.0
-margin_top = 2.0
-margin_right = 196.0
-margin_bottom = 48.0
-text = "
+margin_left = 5.48337
+margin_top = 30.9319
+margin_right = 195.483
+margin_bottom = 76.9319
+text = "pl1
 "
 
 [node name="pl2_name" type="Label" parent="."]
-margin_left = 818.0
-margin_top = 501.0
-margin_right = 1018.0
-margin_bottom = 547.0
+margin_left = 787.002
+margin_top = 487.567
+margin_right = 987.002
+margin_bottom = 533.567
 text = "pl2"
 
 [node name="draw" type="Node2D" parent="."]
@@ -516,8 +516,15 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Winner" type="Label" parent="."]
-margin_left = 829.0
-margin_top = 126.0
-margin_right = 959.0
-margin_bottom = 190.0
+[node name="who" type="Label" parent="."]
+margin_left = 785.883
+margin_top = 111.8
+margin_right = 953.883
+margin_bottom = 153.8
+text = "who"
+
+[node name="step" type="Label" parent="."]
+margin_left = 772.0
+margin_top = 191.0
+margin_right = 876.0
+margin_bottom = 229.0

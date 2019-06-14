@@ -1,5 +1,4 @@
 extends Node2D
-
 var x;
 var y;
 
@@ -193,10 +192,25 @@ func ft_is_win():
 	return(0);	
 	pass		
 	
-						
+func ft_show_who():
+	var nd = get_node("../who");
+	if (G.flag == 1):
+		nd.set_text(G.name_pl_1 + " turns");
+	else:
+		nd.set_text(G.name_pl_2 + " turns");
+	pass
+	
+func ft_step():
+	var nd = get_node("../step");
+	var st = str(int(G.step) + 1);
+	nd.set_text("steps: " + st);
+	pass
+	
 func _physics_process(delta):
 	var po = Vector2();
 	var nd;
+	ft_show_who();
+	ft_step();
 	if (Input.is_action_just_pressed("ui_click")):
 		po = get_viewport().get_mouse_position();
 		if (G.flag_ch == 0):
@@ -218,7 +232,6 @@ func _physics_process(delta):
 			elif (x_2 != x || y_2 != y):
 				ft_half_step();
 		elif (G.flag_ch == 3):
-			print("here");
 			G.table[x][y] = G.flag;
 			if ( G.flag == 1):
 				G.flag = 2;
@@ -228,8 +241,7 @@ func _physics_process(delta):
 			update();
 			G.step += 0.5;
 			G.flag_ch = 0;
-		if (G.step != 0):
-			if (ft_is_win() != 0):	
-				nd= get_node("../Winner");
-				nd.set_text("Winner is" + G.winner + " with " + int(G.step) + " steps!");
+			if (G.step > 9):
+				if (ft_is_win() != 0):
+					G.scene("win");
 	pass				
