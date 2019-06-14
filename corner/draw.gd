@@ -26,7 +26,7 @@ func ft_make_net():
 	pass
 
 
-func ft_draw_circle():	
+func ft_draw_circle():
 	var i = 0;
 	var j = 0;
 	var center;
@@ -54,8 +54,29 @@ func ft_draw_circle():
 		i += 1;
 	pass
 	
+func ft_select_names():
+	var p_1 = Vector2(0, 50);
+	var p_2 = Vector2(p_1.x + 100, p_1.y);
+	draw_line(p_1, p_2, G.c_pl_1, 5, false);
+	p_1.x = 750;
+	p_1.y = 550;
+	p_2 = Vector2(p_1.x + 100, p_1.y);
+	draw_line(p_1, p_2, G.c_pl_2, 5, false);
+	pass	
+	
+func ft_who():
+	var p_1 = Vector2(780, 120);
+	var p_2 = Vector2(p_1.x + 220, p_1.y);
+	if (G.flag == 1):
+		draw_line(p_1, p_2, G.c_pl_1, 5, false);
+	else:
+		draw_line(p_1, p_2, G.c_pl_2, 5, false);
+	pass	
+	
 func _draw():
 	ft_make_net();
+	ft_select_names();
+	ft_who();
 	ft_draw_circle();
 	pass
 	
@@ -137,7 +158,6 @@ func ft_half_step():
 	if (G.table[x_2][y_2] == 5):
 		G.table[x][y] = 0;
 		G.table[x_2][y_2] = G.flag + 2;
-		print(G.table[x_2][y_2]);
 		x = x_2;
 		y = y_2;
 		ft_clear_board();
@@ -150,44 +170,48 @@ func ft_half_step():
 func ft_is_win_1():
 	var t_x = 5;
 	var t_y = 5;
-	var count = 0;
+	var rez = 0;
 	
 	while (t_y < 8):
-		t_x = 0;
+		t_x = 5;
 		while(t_x < 8):
 			if (G.table[t_x][t_y] == 1):
 				t_x += 1;
-				count += 1;
+				rez += 1;
 			else:
-				break ;
-		count += 1;		
+				print("win11 " + str(rez));
+				return (rez);
 		t_y += 1;
-	return (count);	
+	print("win1 " + str(rez));
+	return (rez);	
 
 func ft_is_win_2():
 	var t_x = 0;
 	var t_y = 0;
-	var count = 0;
+	var rez = 0;
 	
 	while (t_y < 3):
 		t_x = 0;
-		while(t_x < 3):
+		while (t_x < 3):
 			if (G.table[t_x][t_y] == 2):
 				t_x += 1;
-				count += 1;
+				rez += 1;
 			else:
-				break ;
-		count += 1;		
+				print("win22 " + str(rez));
+				return (rez);
 		t_y += 1;
-	return (count);	
+	print("win2 " + str(rez));
+	return (rez);	
 	
 func ft_is_win():
-	var rez = 0;
+	print("is win");
 	if (ft_is_win_1() == 9):
-		G.winner == G.name_pl_1;
+		G.winner = G.name_pl_1;
+		G.scene("win");
 		return(1);
 	if (ft_is_win_2() == 9):
-		G.winner == G.name_pl_2;
+		G.winner = G.name_pl_2;
+		G.scene("win");
 		return(2);
 	return(0);	
 	pass		
@@ -241,7 +265,8 @@ func _physics_process(delta):
 			update();
 			G.step += 0.5;
 			G.flag_ch = 0;
-			if (G.step > 9):
-				if (ft_is_win() != 0):
-					G.scene("win");
+			ft_is_win();
+			if (G.step >= 32):
+				G.scene("win");
+			 
 	pass				

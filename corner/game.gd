@@ -19,6 +19,7 @@ func ft_get_name():
 	pl1.set_text(G.name_pl_1);
 	pl2.set_text(G.name_pl_2);
 	pass
+	
 func _ready():
 	ft_fill_start(0, 1);
 	ft_fill_start(5, 2);

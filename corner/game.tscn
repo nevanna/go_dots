@@ -11,6 +11,12 @@ __meta__ = {
 "_edit_vertical_guides_": [ 200.23, 704.105, 156.67, 232.797, 295.638, 358.479, 484.875, 547.716, 422.034, 611.985, 673.398 ]
 }
 
+[node name="Panel" type="Panel" parent="."]
+margin_left = 778.0
+margin_top = 89.0
+margin_right = 1001.0
+margin_bottom = 241.0
+
 [node name="exit" type="Button" parent="."]
 modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
 self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
@@ -30,10 +36,10 @@ text = "pl1
 "
 
 [node name="pl2_name" type="Label" parent="."]
-margin_left = 787.002
-margin_top = 487.567
-margin_right = 987.002
-margin_bottom = 533.567
+margin_left = 757.037
+margin_top = 529.415
+margin_right = 957.037
+margin_bottom = 575.415
 text = "pl2"
 
 [node name="draw" type="Node2D" parent="."]
@@ -517,14 +523,15 @@ __meta__ = {
 }
 
 [node name="who" type="Label" parent="."]
-margin_left = 785.883
-margin_top = 111.8
-margin_right = 953.883
-margin_bottom = 153.8
+margin_left = 782.783
+margin_top = 98.3674
+margin_right = 950.783
+margin_bottom = 140.367
 text = "who"
 
 [node name="step" type="Label" parent="."]
-margin_left = 772.0
-margin_top = 191.0
-margin_right = 876.0
-margin_bottom = 229.0
+margin_left = 782.333
+margin_top = 195.133
+margin_right = 886.333
+margin_bottom = 233.133
+text = "step"
