@@ -14,6 +14,7 @@ func ft_bzero_data():
 				[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0],
 				[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0],
 				[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0]];
+	G.to_file = "";
 	pass
 
 func ft_str_cmp(str1, str2):

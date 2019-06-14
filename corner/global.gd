@@ -11,7 +11,7 @@ var fd = File.new();
 var content = '';
 var flag = 1;
 var flag_ch = 0;
-
+var to_file = "";
 #net params
 var l = 8;
 var y_min = 50;
@@ -53,22 +53,6 @@ func scene(name):
 func exit():
 	get_tree().quit();
 	
-#wor woth file
-#func ft_save():
-#	fd.open(g_d, File.WRITE);
-#	var str_new = winner + ' ' + str(step) + '\n';
-#	fd.store_string(str_new);
-#	fd.close();
-#	print("saved");
-#	pass
-#
-#func ft_load():
-#	fd.open(g_d, File.READ);
-#	content = fd.get_as_text()
-#	fd.close()
-#	print("load");
-#	pass
-
 func ft_print_arr():
 	var i = 0;
 	var j = 0;
