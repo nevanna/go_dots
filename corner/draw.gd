@@ -204,7 +204,6 @@ func ft_is_win_2():
 	return (rez);	
 	
 func ft_is_win():
-	print("is win");
 	if (ft_is_win_1() == 9):
 		G.winner = G.name_pl_1;
 		G.scene("win");
@@ -227,7 +226,7 @@ func ft_show_who():
 func ft_step():
 	var nd = get_node("../step");
 	var st = str(int(G.step) + 1);
-	nd.set_text("steps: " + st);
+	nd.set_text("step " + st + " is going");
 	pass
 	
 func _physics_process(delta):
@@ -266,7 +265,4 @@ func _physics_process(delta):
 			G.step += 0.5;
 			G.flag_ch = 0;
 			ft_is_win();
-			if (G.step >= 32):
-				G.scene("win");
-			 
 	pass				
