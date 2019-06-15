@@ -1,0 +1,76 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://records.gd" type="Script" id=1]
+[ext_resource path="res://afternoon.png" type="Texture" id=2]
+[ext_resource path="res://newgame.gd" type="Script" id=3]
+[ext_resource path="res://exit.gd" type="Script" id=4]
+
+[node name="records" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 511.451, 298.539 )
+scale = Vector2( 0.537451, 0.560508 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="newgame" type="Button" parent="."]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 770.937
+margin_top = 374.24
+margin_right = 1021.94
+margin_bottom = 473.24
+text = "New game"
+script = ExtResource( 3 )
+
+[node name="exit" type="Button" parent="."]
+modulate = Color( 0.889315, 0.850271, 0.174727, 1 )
+self_modulate = Color( 1, 0.94902, 0.0666667, 1 )
+margin_left = 769.949
+margin_top = 495.84
+margin_right = 1020.95
+margin_bottom = 594.84
+text = "Exit"
+script = ExtResource( 4 )
+
+[node name="error" type="Label" parent="."]
+visible = false
+margin_left = 257.572
+margin_top = 84.4352
+margin_right = 478.572
+margin_bottom = 117.435
+text = "no record"
+
+[node name="Panel" type="Panel" parent="."]
+margin_left = 210.534
+margin_top = -1.76532
+margin_right = 749.534
+margin_bottom = 598.235
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 212.0
+margin_top = 49.0
+margin_right = 750.0
+margin_bottom = 597.0
+rect_pivot_offset = Vector2( 939.948, 193.438 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="rec" type="Label" parent="."]
+margin_left = 213.0
+margin_top = -1.0
+margin_right = 749.0
+margin_bottom = 51.0
+text = "Records"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_lock_": true
+}
