@@ -1,7 +1,5 @@
 extends Node
 
-#const g_d = 'путь к файлу';
-
 #game_data
 var name_pl_1 = "";
 var name_pl_2 = "";
