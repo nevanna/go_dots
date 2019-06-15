@@ -37,14 +37,6 @@ var c_pl_1 = "#FF7A00";
 var c_pl_2 = "#83F03C";
 var c_chosen = "#C2F56E";
 var c_way = "#FFDA73";
-func _ready():
-	print("loaded");
-	pass 
-	
-func hello():
-	print("hello");
-	pass
-
 #change scene
 func scene(name):
 	get_tree().change_scene("res://" + name + ".tscn");

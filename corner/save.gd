@@ -27,10 +27,8 @@ func ft_prepare():
 			break ;
 		tmp = tmp + 1;		
 	fd.close();
-	print("i->" + str(i));
 	if (i > 0):
 		if (numb_st[i - 1] < G.step):
-			print("a lot of steps, it is not record(");
 			return (-1);
 
 	while (j < i):
@@ -51,10 +49,6 @@ func ft_prepare():
 		t = t + 1;
 		if ( t == 10):
 			break ;		
-	print(name_pl);
-	print(numb_st);
-	print(new_name_pl);	
-	print(new_numb_st);	
 
 	t = 0;
 	if (i == 0):
@@ -63,7 +57,6 @@ func ft_prepare():
 		while(t <i):
 			to_fl = to_fl + new_name_pl[t] + "\n" + str(new_numb_st[t]) + "\n";
 			t = t + 1;
-	print(to_fl);
 	fd.open("res://rez.txt", File.WRITE);
 	fd.store_line(to_fl);
 	fd.close();

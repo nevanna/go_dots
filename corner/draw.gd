@@ -134,7 +134,6 @@ func ft_find_way():
 							ft_new(tmp_x, tmp_y);
 			t += 1;
 		r += 1;	
-	print(cout);	
 	pass	
 	
 func ft_clear_board():
@@ -179,10 +178,8 @@ func ft_is_win_1():
 				t_x += 1;
 				rez += 1;
 			else:
-				print("win11 " + str(rez));
 				return (rez);
 		t_y += 1;
-	print("win1 " + str(rez));
 	return (rez);	
 
 func ft_is_win_2():
@@ -197,10 +194,8 @@ func ft_is_win_2():
 				t_x += 1;
 				rez += 1;
 			else:
-				print("win22 " + str(rez));
 				return (rez);
 		t_y += 1;
-	print("win2 " + str(rez));
 	return (rez);	
 	
 func ft_is_win():

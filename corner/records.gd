@@ -15,7 +15,6 @@ func _ready():
 	buf = fd.get_as_text();
 	fd.close();
 	var l = len(buf);
-	print (l);
 	if (buf && l > 0):
 		while (i < l):
 			if (buf[i] == '\n'):
@@ -28,10 +27,9 @@ func _ready():
 					
 					if ( i >= l):
 						break ;
-					tmp = tmp  + " ---->";	
+					tmp = tmp  + " ---->";
 			tmp = tmp + " " + buf[i];
 			i = i + 1;
-		print(tmp);
 		nd.set_text(tmp);
 	pass 
 

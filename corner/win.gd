@@ -10,5 +10,5 @@ func _ready():
 		st = str(int(G.step));	
 	G.to_file = G.winner + "\n" + st;
 	nd.set_text(G.winner + " is winner!!! with " + st + " steps");
-	pass #
+	pass 
 
