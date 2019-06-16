@@ -8,7 +8,9 @@ func _ready():
 		st = str(int(G.step + 1))
 	else:
 		st = str(int(G.step));	
-	G.to_file = G.winner + "\n" + st;
+	G.to_file = G.winner + "\n" + st + "\n";
 	nd.set_text(G.winner + " is winner!!! with " + st + " steps");
+	G.step = int(st);
+	print(G.step);
 	pass 
 

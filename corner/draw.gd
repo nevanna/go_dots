@@ -1,9 +1,9 @@
 extends Node2D
-var x;
-var y;
+var x = 0;
+var y = 0;
 
-var x_2;
-var y_2;
+var x_2 = 0;
+var y_2 = 0;
 
 func ft_make_net():
 	var p_1;
@@ -119,7 +119,6 @@ func ft_find_way():
 	var t_max = x + 1;
 	var r = y - 1;
 	var r_max = y + 1;
-	var cout = 0;
 	while( r <= r_max):
 		t = x -1;
 		while (t <= t_max):
@@ -226,7 +225,6 @@ func ft_step():
 	
 func _physics_process(delta):
 	var po = Vector2();
-	var nd;
 	ft_show_who();
 	ft_step();
 	if (Input.is_action_just_pressed("ui_click")):

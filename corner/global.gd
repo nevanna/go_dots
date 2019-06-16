@@ -5,7 +5,6 @@ var name_pl_1 = "";
 var name_pl_2 = "";
 var step = 0;
 var winner = "";
-var fd = File.new();
 var content = '';
 var flag = 1;
 var flag_ch = 0;
@@ -20,6 +19,7 @@ var y_max = y_min + finish_in;
 var x_max = x_min + finish_in;
 
 #mass
+
 var table = [[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0],
 				[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0],
 				[0 , 0 , 0 , 0 , 0 , 0 , 0 , 0],
